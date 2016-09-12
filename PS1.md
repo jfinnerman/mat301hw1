@@ -143,10 +143,24 @@ True
 
 
 
-7. Is the data in the products table case sensitive?  Should it be case sensitive/insensitive? 
+7. Is the data in the products table case sensitive?  Should it be case sensitive/insensitive?
+
+
+
 8. Select all product names.
+
+SELECT name FROM unemath_Finnerman.Products;
+
 9. List the MSRP for all products in ascending order.
+
+Select msrp FROM unemath_Finnerman.Products ORDER BY msrp;
+
 10. Find all products within  category 430.  What is category 430?
+
+Select product_id FROM unemath_Finnerman.Products where category_id=430;
+
+Category 430 is glasses
+
 11. Find all product id and names in category 430 manufactured by 428.
 12. How many products in category 430 manufactured by 428?
 13. How many countries make products contained in the store?
