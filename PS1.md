@@ -159,7 +159,7 @@ Select msrp FROM unemath_Finnerman.Products ORDER BY msrp;
 
 Select product_id FROM unemath_Finnerman.Products where category_id=430;
 
-Category 430 is glasses
+Category 430 is wine glasses
 
 11. Find all product id and names in category 430 manufactured by 428.
 12. How many products in category 430 manufactured by 428?
