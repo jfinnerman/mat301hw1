@@ -146,7 +146,7 @@ FROM database.table;
 
 7. Is the data in the products table case sensitive?  Should it be case sensitive/insensitive?
 
-
+  No, the data in the products table is not case sensitive. 
 
 8. Select all product names.
 
@@ -196,7 +196,7 @@ FROM database.table;
   
 19. Count all product's that have shipping weight less than 1 pound or greater than 20 pounds.
 
-  11668
+  1106
   
 20. Create your own query.
 
