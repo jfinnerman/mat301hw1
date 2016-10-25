@@ -123,38 +123,70 @@ FROM database.table;
 1. What does SQL stand for?  How is it pronounced?
   
   SQL stands for Structures Query Language and is pronounced sequel
+  
+  
+__C__
+
+
 
 2. Are SQL commands case-sensitive?  How can you determine? 
 
   No, the commands are not case sensitive. 
 
+
+__C__
+
+
+
 3. What does DQL stand for?
 
   Data Query Language 
 
+__C__
+
+
 4. True or False:  Is it necessary to use the `FROM` clause with the select statement? 
  
   True
+  
+  
+__C__
+
+
 
 5. True or False:  Is it necessary to use a `WHERE` clause?  If not, when and why would you use a `WHERE` clause?
 
   False. You would use the clause with any query in order to group your data better for clearer and more helpful results. 
+ 
+__C__
 
 6. What is the purpose of the `ORDER BY` clause?  What is its default value?  
 
   The 'ORDER BY' clause is used to sort the records in the set of results for a 'SELECT' statement and its default value is in ascending order. 
 
+__C__
+
+
 7. Is the data in the products table case sensitive?  Should it be case sensitive/insensitive?
 
   No, the data in the products table is not case sensitive. 
+
+__X. Could be__
+
 
 8. Select all product names.
 
   SELECT name FROM unemath_Finnerman.Products;
 
+__C__
+
+
 9. List the MSRP for all products in ascending order.
 
   Select msrp FROM unemath_Finnerman.Products ORDER BY msrp;
+
+__C__
+
 
 10. Find all products within  category 430.  What is category 430?
 
@@ -162,44 +194,74 @@ FROM database.table;
 
   Category 430 is wine glasses
 
+__C__
+
+
 11. Find all product id and names in category 430 manufactured by 428.
 
   Select * from unemath_Finnerman.Products where category_id=430 and manufacturer_id=428;
+
+__C__
+
 
 12. How many products in category 430 manufactured by 428?
 
   18 products
   
+__C.  Show query__
+
+
 13. How many countries make products contained in the store?
 
   40 countries
   Select country, count(*)from unemath_Finnerman.Products group by country;
   
+__X__
+
+
 14. How many products are manufactured in the USA?
 
   4091
   
+  
+__-1/2 show query__
+
+
 15. How many products cost the company less than $10?
 
   7567
   
+  __-1/2 show query__
+
+
 16. How many products cost the company less than $10 and sell for more than $20?
 
   40 products
    
+   __-1/2 show query__
+
 17. How many products cost the company less than $10 and sell for less than $20?
 
+
   7523
+__-1/2 show query__
+
 18. Which products cost less than $10 and sell for more than $20?
 
   Select name from unemath_Finnerman.Products where price <10 and msrp >20;
-  
+  __C__
+
 19. Count all product's that have shipping weight less than 1 pound or greater than 20 pounds.
 
   1106
-  
+__-1/2 show query__
+
 20. Create your own query.
 
   Name all products that weigh more than 5 pounds and have a shipping weight that is more than 10 pounds. 
   
   Select name from unemath_Finnerman.Products where weight >5 and ship_weight >10;
+  
+  
+    __C__
+
